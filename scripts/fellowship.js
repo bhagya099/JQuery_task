@@ -32,7 +32,7 @@ function makeMiddleEarth() {
 
 makeMiddleEarth();
 
-function makeHobbits(){
+function makeHobbits() {
   // your answers here
   let hobbitClass = $('<ul>');
   $(hobbits).each((i) => {
@@ -41,14 +41,15 @@ function makeHobbits(){
     $(hobbitClass).append(li);
   });
 
-  $('article:nth-child(2)').append(hobbitClass);
-  
+  $('article:nth-child(1)').append(hobbitClass);
 }
 
 makeHobbits();
 
-function keepItSecretKeepItSafe(){
+function keepItSecretKeepItSafe() {
   // your answers here
+  let ring = $('<div id="the-ring" class="magic-imbued-jewelry">');
+  $('li:nth-child(1)').append(ring);
 }
 
 keepItSecretKeepItSafe();
