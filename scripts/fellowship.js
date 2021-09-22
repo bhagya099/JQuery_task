@@ -121,6 +121,11 @@ theBalrog();
 
 function hornOfGondor() {
   // your answers here
+  // pop up an alert that the horn of gondor has been blown
+  alert('the horn of gondor has been blown');
+  // Boromir's been killed by the Uruk-hai!
+  // Remove `Boromir` from the Fellowship
+  $('aside li:nth-child(5)').remove();
 }
 
 hornOfGondor();
