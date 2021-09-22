@@ -22,6 +22,12 @@ var section = '<section></section>';
 
 function makeMiddleEarth() {
   // your answers here
+  let earth = $(section).attr('id', 'middle-earth');
+  $(lands).each((i) => {
+    const land = $('<article>').html(`<h1> ${lands[i]}`);
+    $(earth).append(land);
+  });
+  $(body).append(earth);
 }
 
 makeMiddleEarth();
