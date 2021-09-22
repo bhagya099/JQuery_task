@@ -128,10 +128,21 @@ function hornOfGondor() {
   $('aside li:nth-child(5)').remove();
 }
 
-hornOfGondor();
+// hornOfGondor();
 
 function itsDangerousToGoAlone() {
   // your answers here
+  // take `Frodo` and `Sam` out of the fellowship and move  them to `Mordor`
+  
+  
+  let frodo = $('article:nth-child(2) > ul li:nth-child(1)');
+  let sam = $('article:nth-child(2) > ul li:nth-child(2)');
+  // add a div with an id of `'mount-doom'` to `Mordor`
+  let div = $('<div id="mount-doom">');
+  div.append(frodo)
+   div.append(sam)
+  let mordor = $('article:nth-child(3)')
+  mordor.append(div)
 }
 
 itsDangerousToGoAlone();
