@@ -72,13 +72,15 @@ function makeBuddies(){
 
 makeBuddies();
 
-function beautifulStranger(){
+function beautifulStranger() {
   // your answers here
+  // change the `'Strider'` text to `'Aragorn'`
+  $('aside > ul > li:nth-child(4)').text('Aragorn');
 }
 
 beautifulStranger();
 
-function leaveTheShire(){
+function leaveTheShire() {
   // your answers here
 }
 
