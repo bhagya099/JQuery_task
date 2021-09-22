@@ -99,7 +99,7 @@ function forgeTheFellowship() {
   for (let i of hobBuds) {
     let newPerson = $('<p>').text(i);
     $(div).append(newPerson);
-    alert(`${i} is added`);
+    // alert(`${i} is added`);
   }
   $('article:nth-child(2)').append(div);
   // after each character is added make an alert that they // have joined your party
@@ -107,8 +107,14 @@ function forgeTheFellowship() {
 
 forgeTheFellowship();
 
-function theBalrog(){
+function theBalrog() {
   // your answers here
+  // change the `'Gandalf'` text to `'Gandalf the White'`
+  let gandlaf = $('aside ul li:nth-child(1)');
+  gandlaf.text('Gandalf the White');
+  // apply the following style to the element, make the // background 'white', add a grey border
+  gandlaf.css('background', 'white');
+  gandlaf.css('border', '3px solid grey');
 }
 
 theBalrog();
