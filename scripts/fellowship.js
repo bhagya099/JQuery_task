@@ -34,6 +34,15 @@ makeMiddleEarth();
 
 function makeHobbits(){
   // your answers here
+  let hobbitClass = $('<ul>');
+  $(hobbits).each((i) => {
+    const li = $('<li class="hobbit">').text(hobbits[i]);
+
+    $(hobbitClass).append(li);
+  });
+
+  $('article:nth-child(2)').append(hobbitClass);
+  
 }
 
 makeHobbits();
