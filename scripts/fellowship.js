@@ -82,6 +82,10 @@ beautifulStranger();
 
 function leaveTheShire() {
   // your answers here
+  // assemble the `hobbits` and move them to `rivendell`
+  let riven = $('article:nth-child(2)');
+  let hobbit = $('article:nth-child(1) ul');
+  $(riven).append(hobbit);
 }
 
 leaveTheShire();
