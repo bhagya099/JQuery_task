@@ -149,12 +149,32 @@ itsDangerousToGoAlone();
 
 function weWantsIt() {
   // your answers here
+  // Create a div with an id of `'gollum'` and add it to Mordor
+  let div = $('<div id="gollum">');
+  // Remove `the ring` from `Frodo` and give it to `Gollum`
+  // let ring = $('#the-ring');
+  let frodo = $('artical:nth-child(3) > div li:nth-child(1)');
+  let ring = $('.magic-imbued-jewelry');
+  // frodo.remove(ring);
+  div.append(ring);
+  // Move Gollum into Mount Doom
+  let mordor = $('article:nth-child(3)');
+  mordor.append(div);
 }
 
 weWantsIt();
 
-function thereAndBackAgain(){
+function thereAndBackAgain() {
   // your answers here
+  // remove `Gollum` and `the Ring` from the document
+  let gollum = $('#gollum');
+  let ring = $('.magic-imbued-jewelry');
+  gollum.remove();
+  ring.remove();
+  // Move all the `hobbits` back to `the shire`
+  $('#mount-doom').remove();
+  makeHobbits();
 }
 
 thereAndBackAgain();
+
